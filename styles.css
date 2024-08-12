@@ -1,0 +1,1043 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    min-height: 100vh;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/banner.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.logo {
+    width: 8.75rem;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: #fff;
+}
+
+nav ul li a {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+nav ul li a.active::after {
+    opacity: 1;
+}
+
+nav button {
+    padding: .5rem 1.5rem;
+    border: 0;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.landing-page-content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.landing-page-content h1 {
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.travel-details form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem .5rem .5rem 1.5rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    margin: auto;
+}
+
+.travel-details form div {
+    padding-right: .5rem;
+}
+
+.travel-details .Location-input {
+    flex-basis: 30%;
+    padding-right: 4rem;
+}
+
+.travel-details form div:nth-child(2),
+.travel-details form div:nth-child(3),
+.travel-details form div:nth-child(4) {
+    padding-left: 1rem;
+    width: 20%;
+    border-left: 1px solid #ccc;
+}
+
+.travel-details form button {
+    display: grid;
+    place-content: center;
+    width: 55px;
+    height: 55px;
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+    background-color: #ff5361;
+    cursor: pointer;
+}
+
+.travel-details form button img {
+    width: 15px;
+    height: 15px;
+}
+
+.travel-details form label {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.travel-details form input {
+    border: 0;
+    outline: none;
+    width: 100px;
+    font-size: 12px;
+}
+
+.travel-details .Location-input input {
+    width: 120px;
+}
+
+section {
+    padding: 3rem 3rem 0;
+}
+
+.exclusives {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 30px;
+}
+
+.exclusives div img {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.exclusives div {
+    position: relative;
+}
+
+
+.exclusives span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.9);
+    white-space: nowrap;
+}
+
+.trending-places {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-gap: 1rem;
+}
+
+.trending-places div img {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.trending-places div p {
+    margin-top: .75rem;
+    font-weight: 600;
+}
+
+.section-3 {
+    display: flex;
+    align-items: center;
+    height: 320px;
+    color: #fff;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(images/banner-2.png);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+}
+
+.section-3 .share {
+    padding-left: 4rem;
+}
+
+.section-3 .share h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+
+.section-3 .share p {
+    /* font-size: 14px; */
+    margin-block: 1rem 1.5rem;
+}
+
+.section-3 .share a {
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-size: 12px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    background-color: #ff5361;
+}
+
+.traveller-stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 2fr));
+    gap: 1rem;
+}
+
+.traveller-stories div {
+    position: relative;
+}
+
+.traveller-stories div img {
+    border-radius: .5rem;
+}
+
+.traveller-stories div p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.843);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    width: 80%;
+}
+
+.section-4 a {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    margin-block: 3rem 1rem;
+    width: 80%;
+    max-width: 21.875rem;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #ff5361;
+    border-radius: 1.5rem;
+}
+
+.about {
+    text-align: center;
+    width: 98%;
+    margin: auto;
+    line-height: 1.75rem;
+}
+
+.about h2 {
+    font-size: 1.3rem;
+}
+
+footer {
+    padding: 1rem 3rem;
+    margin: auto;
+    text-align: center;
+}
+
+footer hr {
+    border-top: .5px solid #999;
+}
+
+footer a .fa-brands {
+    margin: 1rem .5rem 1.5rem;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+footer p {
+    padding-block: .95rem;
+}
+
+.Navbar .fa-bars {
+    display: none;
+}
+
+/* -----------Media Query for index page------------------------ */
+
+@media (max-width:700px) {
+    section {
+        padding-inline: 1rem;
+    }
+
+    .logo {
+        position: fixed;
+        top: 2rem;
+        left: 1rem;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        padding: 6.25rem 1rem 0;
+        display: inline-block;
+        background-color: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 0.625rem 0;
+        display: block;
+    }
+
+    nav button {
+        display: inline-block;
+        margin: 0.9375rem 0 1.875rem;
+    }
+
+    .Navbar .fa-bars {
+        display: inline-block;
+        position: absolute;
+        width: 1.5rem;
+        top: 2.25rem;
+        right: 1.5rem;
+        font-size: 1.75rem;
+        z-index: 200;
+        color: #fff;
+        cursor: pointer;
+
+    }
+
+    .travel-details form {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: .5rem;
+        border-radius: 1rem;
+        position: relative;
+    }
+
+    .travel-details form div {
+        padding-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        margin-top: .5rem;
+    }
+
+    .travel-details .Location-input {
+        flex-basis: 100%;
+        padding-right: 0;
+    }
+
+    .travel-details form div:nth-child(2),
+    .travel-details form div:nth-child(3),
+    .travel-details form div:nth-child(4) {
+        width: 100%;
+        border-left: 0;
+    }
+
+    .travel-details form button {
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 2rem;
+    }
+
+    .travel-details form input {
+        padding: .5rem .5rem .5rem 0;
+    }
+
+    .travel-details form div:nth-child(2),
+    .travel-details form div:nth-child(3),
+    .travel-details form div:nth-child(4) {
+        padding-left: 0;
+    }
+
+    .travel-details form div:nth-child(4) {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 2rem;
+    }
+
+
+    nav ul li a::after {
+        width: 20%;
+        left: -40%;
+        bottom: 50%;
+    }
+
+    .hidemenu {
+        max-height: 300px;
+    }
+
+    .landing-page-content {
+        top: 30%;
+    }
+
+    .landing-page-content h1 {
+        font-size: 1.8rem;
+        font-size: 7vw;
+        white-space: nowrap;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    
+
+    .section-3 {
+        padding: 1rem;
+    }
+
+    .section-3 .share {
+        padding-left: 0;
+    }
+
+    .section-3 .share h3 {
+        font-size: 2rem;
+    }
+
+    .section-3 .share a {
+        font-size: 14px;
+    }
+
+    .traveller-stories div p {
+        font-size: 16px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
+
+/* ----------------Listing Page------------------ */
+.navbar-white nav {
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-white button {
+    color: #fff;
+    background-color: #ff5361;
+}
+
+.navbar-white ul li a {
+    color: #000;
+}
+
+.navbar-white ul li a::after {
+    background-color: #ff5361;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    flex-wrap: wrap;
+    padding: 2rem 3rem;
+}
+
+.container main {
+    flex-basis: 70%;
+}
+
+.container main .options {
+    padding-bottom: .5rem;
+}
+
+.container main h2 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.houses {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.house-img {
+    flex-basis: 40%;
+}
+
+.house-info {
+    flex-basis: 58%;
+}
+
+.house-img img {
+    width: 100%;
+    border-radius: .5rem;
+
+}
+
+.houses h3 {
+    padding-block: .5rem;
+    color: #333;
+    font-size: 1rem;
+}
+
+.house-info p {
+    font-size: 14px;
+    color: #333;
+}
+
+.house-info span .fa-star,
+.house-info span .fa-star-half-stroke {
+    font-size: 14px;
+    margin-block: .45rem;
+    color: #ff5361;
+}
+
+.houses .pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.houses .pricing span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+
+}
+
+.houses .pricing p:first-of-type {
+    padding-bottom: .5rem;
+}
+
+.container aside {
+    flex-basis: 25%;
+    height: fit-content;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.container aside h3 {
+    font-weight: 600;
+    /* font-size: 1rem; */
+}
+
+.container aside .filter-heading {
+    font-weight: 600;
+    font-size: 13px;
+    padding-top: 1rem;
+}
+
+.container aside .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .65rem;
+
+}
+
+.container aside .filter div {
+    display: flex;
+    align-items: center;
+}
+
+.container aside .filter input {
+    margin-right: .5rem;
+}
+
+.container aside .filter label,
+.container aside .filter p {
+    font-size: 12px;
+}
+
+.filter-view-more {
+    text-align: right;
+    font-size: 14px;
+    margin-block: 1rem;
+    cursor: pointer;
+}
+
+.pageNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    padding-inline: 3rem;
+    font-size: 15px;
+}
+
+.left-arrow {
+    width: 15px;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+.right-arrow {
+    width: 15px;
+    margin-left: .5rem;
+    transform: rotate(180deg);
+    cursor: pointer;
+
+}
+
+.pageNav a {
+    margin-inline: .25rem;
+    color: #333;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.pageNav .current {
+    color: #fff;
+    background-color: #333;
+}
+
+/* --------------------Media Query for Listing page------------------------ */
+@media (max-width:700px) {
+    .container {
+        flex-direction: column;
+        padding: 8rem 1.5rem 1.5rem;
+    }
+
+    .container main,
+    .container aside,
+    .house-img,
+    .house-info {
+        flex-basis: 100%;
+    }
+
+    .navbar-white .Navbar .fa-bars {
+        color: #000;
+    }
+
+    .houses {
+        width: 100%;
+        row-gap: 1rem;
+    }
+
+    .houses h3 {
+        font-size: 1rem;
+    }
+
+    .house-info p {
+        font-size: 14px;
+        
+    }
+
+
+    .container main h2 {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .container main h2 span {
+        white-space: nowrap;
+    }
+
+
+    .pageNav {
+        font-size: 14px;
+    }
+
+    .pageNav a {
+        margin-inline: .25rem;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+    }
+
+    .left-arrow {
+        width: 10px;
+        margin-right: .25rem;
+        cursor: pointer;
+    }
+
+    .right-arrow {
+        width: 10px;
+        margin-left: .25rem;
+        cursor: pointer;
+    }
+
+        .container aside .filter-heading {
+        font-size: 14px;
+    }
+
+    .container aside .filter label, .container aside .filter p {
+        font-size: 14px;
+    }
+}
+
+/* ------------Description Page------------------- */
+
+.decription-container {
+    padding: 2rem 7rem;
+}
+
+.decription-container h2 {
+    font-weight: 600;
+    color: #333;
+}
+
+.rating {
+    font-size: 12px;
+    padding-top: .5rem;
+    padding-bottom: .75rem;
+}
+
+.rating span {
+    margin-right: 1rem;
+}
+
+.rating span .fa-star,
+.rating span .fa-star-half-stroke {
+    color: #ff5361;
+}
+
+.house-views {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.major-img {
+    flex-basis: 49.5%;
+}
+
+.other-img {
+
+    flex-basis: 49.5%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: .5rem;
+}
+
+.major-img img,
+.other-img img {
+    width: 100%;
+    border-radius: .35rem;
+}
+
+.rental-unit {
+    font-weight: 600;
+    color: #333;
+    font-size: 15px;
+}
+
+.rental-unit-info span {
+    font-size: 12px;
+    color: #333;
+    margin-right: 1rem;
+}
+
+.rental-unit-price {
+    text-align: right;
+    font-weight: 800;
+    font-size: 14px;
+    padding: .25rem 0;
+    color: #333;
+}
+
+.rental-unit-border-bottom {
+    width: 70%;
+    margin: 1rem 0 2rem 0;
+    border: 1px solid #ccc;
+}
+
+.availability {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: .5rem;
+    padding: 10px 2rem;
+    width: 100%;
+}
+
+.availability div {
+    flex-basis: 15%;
+    margin-right: 2rem;
+}
+
+.availability button {
+    flex-basis: 40%;
+    padding: 10px 2rem;
+    margin-left: 3rem;
+    border-radius: .26rem;
+    font-size: 12px;
+    border: 0;
+    color: #fff;
+    background-color: #ff5361;
+}
+
+.availability label {
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: .75rem;
+}
+
+.availability input {
+    padding: 2px 5px 2px 0;
+    font-size: 12px;
+    width: 70px;
+    margin-top: .25rem;
+    border: 0;
+    outline: 0;
+}
+
+.flat-description {
+    margin-block: 3rem;
+    color: #333;
+}
+
+.flat-description .flat-info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.flat-description .flat-info div p {
+    margin-bottom: .12rem;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.flat-description .flat-info div span {
+    font-size: 11px;
+}
+
+.guest-expectation {
+    margin-block: 1rem;
+    max-width: 55ch;
+    font-size: 14px;
+}
+
+.guest-expectation-hr {
+    margin-block: 2rem;
+    width: 70%;
+    max-width: 700px;
+    border-top: 1px solid #ccc;
+}
+
+.map {
+    color: #333;
+}
+
+.map h3 {
+    color: #333;
+}
+
+.map iframe {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.map h5 {
+    color: #333;
+}
+
+.map p {
+    font-size: 12px;
+    padding-top: .5rem;
+}
+
+.host {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0 3rem;
+    color: #333;
+}
+
+.host p:first-of-type {
+    font-weight: 600;
+}
+
+.host img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.host .host-info span {
+    margin-top: .25rem;
+    margin-right: .75rem;
+    font-size: 12px;
+}
+
+.host .host-info span i {
+    font-size: 11px;
+    color: #ff5361;
+}
+
+.contact-host-btn {
+    margin-top: 1.5rem;
+    width: 10rem;
+    padding: .75rem 2rem;
+    background: transparent;
+    border: 1px solid #ff5361;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+/* --------------media query for description page--------------------- */
+
+@media (max-width:700px) {
+    .decription-container {
+        padding: 8rem 1.5rem 0;
+    }
+
+    .rating {
+        font-size: 14px;
+        padding-block: .5rem;
+        line-height: 1.75rem;
+    }
+
+    .house-views {
+        flex-wrap: wrap;
+        row-gap: .25rem;
+    }
+
+    .major-img,
+    .other-img {
+        flex-basis: 100%;
+    }
+
+    .rental-unit {
+        font-size: 19px;
+        padding-bottom: .5rem;
+    }
+
+    .rental-unit-info span {
+        font-size: 14px;
+        margin: 1rem 0;
+    }
+
+    .rental-unit-price {
+        padding-top: .5rem;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .rental-unit-border-bottom {
+        width: 100%
+    }
+
+    .availability {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .availability div {
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .availability button {
+        margin: auto;
+        margin-block: 10px 0;
+        flex-basis: 100%;
+    }
+
+    .availability label,
+    .availability input,
+    .availability button {
+        font-size: 14px;
+    }
+
+    .availability input {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .guest-expectation-hr {
+        width: 100%;
+    }
+
+    .map p {
+        font-size: 14px;
+    }
+
+    .map h5 {
+        font-size: 16px;
+    }
+
+    .host {
+        display: block;
+    }
+
+    .host img {
+        margin-bottom: .25rem;
+    }
+
+    .host .host-info span {
+        font-size: 14px;
+    }
+}
